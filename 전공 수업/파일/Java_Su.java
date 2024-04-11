@@ -40,6 +40,6 @@ public class Java_Su {
 			}
 		}
 		
-		if (result) System.out.println(bf.toString()); //반복문이 끝나고 만약 result값이 false라면 저장한 bf값 출력
+		if (result) System.out.println(bf.toString()); //반복문이 끝나고 만약 result값이 true라면 저장한 bf값 출력
 	}
 }
