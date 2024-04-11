@@ -21,5 +21,8 @@ public class ClassStart5 {
 			System.out.println("이름 :" + students[i].StudentName + "나이 : " +  students[i].StudentAge + "세 성적 : " +  students[i].StudentGrade + "점");
 		}
 		
+		for (Student s : students) {
+			System.out.println("이름 :" + s.StudentName + "나이 : " +  s.StudentAge + "세 성적 : " +  s.StudentGrade + "점");
+		}
 	}
 }
