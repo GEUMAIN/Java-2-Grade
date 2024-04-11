@@ -13,6 +13,6 @@
 
 ![깃허브 자료](https://github.com/GEUMAIN/Java-2-Grade/assets/128437656/ae5675c3-4ecb-4cf8-8cac-188e6e33fcc1)
 
-# 이해를 위한 한셀 공
+# 이해를 위한 한셀 공부
 
 ![깃허브 자료2](https://github.com/GEUMAIN/Java-2-Grade/assets/128437656/b7d7009a-9996-408f-92ce-9814851eb774)
