@@ -18,7 +18,7 @@
 
 변수를 사용해서 학생 정보를 출력해보자!!
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		String StudentName1 = "홍길동";
 		int StudentAge1 = 15;
 		int StudentGrade1 = 90;
@@ -69,7 +69,7 @@ public static void main(String[] args) {
 각각의 학생별로 본인의 이름, 나이, 성적을 관리한다.
 
 ## 클래스
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		Student stu1 = new Student(); //메모리에 학생클래스를 생성하여 stu1에 담아둔다.
 		
 		stu1.StudentName = "홍길동"; // .( 닷 )을 쓰는 순간 이 주소로 이동하라고 말해주는 것( 접근 )이다.
@@ -156,7 +156,7 @@ stu1 = 0x0099ff; //stu1 변수에 주소값이 담김
 
 2. 출력문구를 반복문을 통해 심플하게 변경
 
-public static void main(String[] args) {
+		public static void main(String[] args) {
 		// 리팩토링
 		// 1. 선언 단일화( 베열로만 접근 )
 		// 2. 출력문구를 반복문을 통해 심플하게 변경
