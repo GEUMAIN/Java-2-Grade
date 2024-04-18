@@ -41,7 +41,7 @@ public class Account {
 
 ## AccountMain 클래스
 
-public static void main(String[] args) {
+    public static void main(String[] args) {
         Account account = new Account();
 
         account.deposit(10000);
