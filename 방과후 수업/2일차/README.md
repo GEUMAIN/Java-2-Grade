@@ -52,7 +52,7 @@ public class ProductOrder {
 
 ### 메인코드
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		ProductOrder[] pro = new ProductOrder[3];
 		pro[0] = new ProductOrder();
 		pro[1] = new ProductOrder();
@@ -101,7 +101,7 @@ public static void main(String[] args) {
 
 ### 위에서부터 실행하는 절차형 코드 예시
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		boolean isOn = false;
 		int volume = 0;
 		
@@ -144,7 +144,7 @@ public static void main(String[] args) {
 
 ### 메서드 만들어서 활용하기
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		MusicPlayerData data = new MusicPlayerData();
 		int sum = 0;
 		// 음악 플레이어 켜기
@@ -213,7 +213,7 @@ public static void main(String[] args) {
 
 ### 멤버 변수와 메서드를 합쳐보자 ( 객체 지향 )
 
-public class MusicPlayer {
+	public class MusicPlayer {
 	boolean isOn;
 	int volume;
 	
@@ -245,7 +245,7 @@ public class MusicPlayer {
 	}
 }
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		MusicPlayer player = new MusicPlayer();
 		// 음악 플레이어 켜기
 		player.on();
@@ -285,7 +285,7 @@ public static void main(String[] args) {
 
 객체지향으로 만들어보자.**
 
-public class Rectangle {
+	public class Rectangle {
 	int widths;
 	int height;
 	boolean square;
