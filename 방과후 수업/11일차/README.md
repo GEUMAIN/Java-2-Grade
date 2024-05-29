@@ -409,3 +409,131 @@ public class PayMain0 {
 ---
 
 ### AFTER
+
+### Pay (인터페이스)
+
+```java
+public interface Pay {
+	boolean pay(int amount);
+}
+```
+
+---
+
+### KakaoPay
+
+```java
+public class KakaoPay implements Pay{
+	
+	@Override
+	public boolean pay(int amount) {
+		System.out.println("카카오페이 시스템과 연결합니다.");
+		System.out.println(amount + "원 결제를 시도합니다.");
+		return true;
+	}
+}
+```
+
+---
+
+### NaverPay
+
+```java
+public class NaverPay implements Pay{
+	
+	@Override
+	public boolean pay(int amount) {
+		System.out.println("네이버 시스템과 연결합니다.");
+		System.out.println(amount + "원 결제를 시도합니다.");
+		return true;
+	}
+}
+```
+
+---
+
+### PayService
+
+```java
+public class PayService {
+	
+	public void processPay(String option,int amount) {
+		boolean result;
+		System.out.println("결제를 시작합니다 : option = " + option + ", amount = " + amount);
+		
+		Pay pay = PayStore.findPay(option);
+		result = pay.pay(amount);
+		
+		if (result) {
+			System.out.println("결제가 성공했습니다.");
+		}else {
+			System.out.println("결제에 실패했습니다.");
+		}
+	}
+}
+```
+
+---
+
+### PayStore
+
+```java
+public abstract class PayStore {
+	
+	//결제 수단이 추가되거나 삭제되는 벼경이 일어나면 수정하는 부분
+	public static Pay findPay(String option) {
+		if(option.equals("kakao")) {
+			return new KakaoPay();
+		} else if (option.equals("naver")) {
+			return new NaverPay();
+		}else {
+			return new DefaultPay();
+		}
+	}
+}
+```
+
+---
+
+### DefaultPay
+
+```java
+public class DefaultPay implements Pay{
+	@Override
+	public boolean pay(int amount) {
+		System.out.println("결제 수단이 없습니다.");
+		return false;
+	}
+}
+```
+
+---
+
+### PayMain
+
+```java
+public class PayMain1 {
+	public static void main(String[] args) {
+		
+		PayService payService = new PayService();
+		
+		// kakao 결제
+		int amount1 = 5000;
+		String payOption1 = "kakao";
+		
+		payService.processPay(payOption1,amount1);
+		
+		// naver 결제
+		String payOption2 = "naver";
+		int amount2 = 10000;
+		
+		payService.processPay(payOption2, amount2);
+		
+		// 잘못된 결제수단
+		String payOption3 = "apple";
+		int amount3 = 15000;
+		
+		payService.processPay(payOption3, amount3);
+	}
+}
+```
