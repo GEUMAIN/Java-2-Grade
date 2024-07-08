@@ -270,11 +270,8 @@ public static void main(String[] args) {
 
 심해에는 두 종류의 생명체 A와 B가 존재한다. A는 B를 먹는다. A는 자기보다 크기가 작은 먹이만 먹을 수 있다. 예를 들어, A의 크기가 {8, 1, 7, 3, 1}이고, B의 크기가 {3, 6, 1}인 경우에 A가 B를 먹을 수 있는 쌍의 개수는 7가지가 있다. 8-3, 8-6, 8-1, 7-3, 7-6, 7-1, 3-1.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/fa97d740-13f6-4ddc-9939-b86bb2c976d6/74377f5f-9559-4cea-8a8d-fe2c9abae92e/Untitled.png)
+![Untitled](https://github.com/GEUMAIN/Java-2-Grade/assets/128437656/ae4b957e-4563-403d-aa2b-687cd937d36f)
 
-!https://cloud9june.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F09d6be13-d25c-43c8-9dc9-a75c57177bd3%2F39a89f22-d917-4988-8dda-21fa5487c6f6%2FUntitled.png?table=block&id=f7efddb4-c1e8-4068-9216-25f51ac57743&spaceId=09d6be13-d25c-43c8-9dc9-a75c57177bd3&width=520&userId=&cache=v2
-
-[data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)
 
 두 생명체 A와 B의 크기가 주어졌을 때, A의 크기가 B보다 큰 쌍이 몇 개나 있는지 구하는 프로그램을 작성하시오.
 
