@@ -373,3 +373,67 @@ public class EnumRefMain3_3 {
 }
 
 ```
+
+---
+
+### 문제 풀어보기
+
+```java
+회원 인증등급을 AuthGrade 라는 이름의 열거형으로 생성한다.
+연층 등급은 3단계, level과 description을 가진다.
+getter 값을 호출할 수는 있어야 한다.
+
+1. GUEST
+	- level : 1
+	- description : 손님
+2. LOGIN
+	- level : 2
+	- desription : 로그인 회원
+3. ADMIN
+	- level : 3
+	- description : 관리자
+```
+
+### 내 풀이
+
+```java
+public enum AuthGrade {
+	GUEST(1,"손님"),LOGIN(2,"로그인 회원"),ADMIN(3,"관리자");
+	
+	private final int level;
+	private final String description;
+	
+	AuthGrade(int level, String description) {
+		this.level = level;
+		this.description = description;
+	}
+	
+	public int getlevel() {
+		return level;
+	}
+	
+	public String getDescription() {
+		return description;
+	}
+}
+
+```
+
+---
+
+```java
+public class GradeMain {
+	public static void main(String[] args) {
+		AuthGrade[] authgrade = AuthGrade.values();
+		
+		for(AuthGrade g : authgrade) {
+			printGrade(g);
+		}
+	}
+	
+	private static void printGrade(AuthGrade grade) {
+		System.out.println(grade.name() + ", 레벨 : " + grade.getlevel() + ", 설명 : " + grade.getDescription());
+	}
+
+}
+```
